@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+    --linear-gradient: linear-gradient (90deg, #008cff, #523eff, #a200ff);
+}
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--linear-gradient);
+    color: #d1d5db;
+}
+#form {
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.323);
+    padding: 40px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+  
+    background-color: black;
+}
+#form h2 {
+    font-size: 30px;
+    position: relative;
+}
+#form h2::before {
+    
+        height: 3px;
+        width: 195px;
+        bottom: 2px;
+      
+        position: absolute;
+        content: "";
+      
+        background: var(--linear-gradient);
+      }
+      #input-form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      #form-control {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+      }
+      #form-control label {
+        font-size: 15px;
+        color: #c8ced6;
+        font-weight: 500;
+      }
+      #form-control input{
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #4c1d95;
+      
+        color: white;
+        font-size: 20px;
+      
+        background-color: transparent;
+      }
+      #form-control input:focus {
+        outline: none;
+      }
+      
+      #result {
+        text-align: center;
+      }
+      #total {
+        font-size: 40px;
+      }
+      #calculate {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+      
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+      
+        background: var(--linear-gradient);
+      
+        cursor: pointer;
+      }
+      
+      #calculate:hover {
+        background: linear-gradient(90deg, #005aa3, #6f00af);
+      }
+      @media screen and (max-width: 480px){
+        #form {
+            padding: 30px;
+        }
+        #form h2 {
+            font-size: 15px;
+        }
+        #form h2::before {
+            height: 2px;
+            width: 100px;
+            bottom: -1px;
+          }
+        
+          #form-control label {
+            font-size: 12px;
+            color: #c8ced6;
+            font-weight: 500;
+          }
+        
+          #form-control input {
+            padding: 3px;
+            border-bottom: 1px solid #4c1d95;
+        
+            font-size: 13px;
+          }
+          #total {
+            font-size: 30px;
+          }
+        
+      }

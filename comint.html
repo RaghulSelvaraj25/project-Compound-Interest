@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compound interest</title>
+    <link rel="stylesheet" href="comint.css" />
+    
+</head>
+<main id="container">
+    <div id="form">
+        <h2>Compound Interest Calculator</h2>
+        <div id="input-form">
+            <div id="form-control">
+                <label for="principal">Initial Investment</label>
+                <input type="number" id="principal" placeholder="0000" name="principal" required />
+            </div>
+            <div id="form-control">
+                <label for="rate">Interest Rate</label>
+                <input type="number" id="rate" placeholder="0000" name="rate" required />
+            </div>
+            <div id="form-control">
+                <label for="period">Compounding Period</label>
+                <input type="number" id="period" placeholder="0000" name="period" required />
+            </div>
+        </div>
+        <div id="result">
+            <h4>Result :</h4>
+            <span id="total">0,0</span>
+        </div>
+        <button id="calculate" onclick="calculate">calculate</button>
+    </div>
+</main>
+<script src="comint.js"></script>
+<body>
+    
+</body>
+</html>
